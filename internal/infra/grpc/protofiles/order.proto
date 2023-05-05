@@ -1,0 +1,31 @@
+syntax = "proto3";
+package pb;
+option go_package = "/pb";
+
+message blank {}
+
+message Order {
+    string id = 1;
+    double price = 2;
+    double tax = 3;
+    double final_price = 4;
+}
+
+message CreateOrderRequest {
+    string id = 1;
+    double price = 2;
+    double tax = 3;
+}
+
+message CreateOrderResponse {
+    Order order = 1;
+}
+
+message OrderList {
+    repeated Order orders = 1;
+}
+
+service OrderService {
+    rpc CreateOrder(CreateOrderRequest) returns (CreateOrderResponse);
+    rpc ListOrders(blank) returns (OrderList);
+}
