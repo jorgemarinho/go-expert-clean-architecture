@@ -1,6 +1,6 @@
 package usecase
 
-import "github.com/jorgemarinho/go-expert-clean-architecture/entity"
+import "github.com/jorgemarinho/go-expert-clean-architecture/internal/entity"
 
 type ListOrdersOrderOutputDTO struct {
 	ID         string  `json:"id"`

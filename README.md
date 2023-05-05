@@ -1,6 +1,6 @@
 # Go Expert - Clean Architecture
 
-Em termos de negócio, o projeto consiste em criar uma ordem de serviço, onde é informado o preço e a taxa e o sistema calcula o preço final.
+O projeto consiste em criar uma ordem de serviço, onde é informado o preço e a taxa e o sistema calcula o preço final.
 
 1. Ao rodar a aplicação, um único binário sobe um _web server_, um servidor _GraphQL_ e um servidor _gRPC_;
 2. Nos 3 formatos de comunicação, é possível incluir uma nova ordem. Obviamente, percebe-se o uso de _goroutines_ ao subir a aplicação;

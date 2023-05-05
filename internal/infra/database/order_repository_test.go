@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/jorgemarinho/go-expert-clean-architecture/entity"
+	"github.com/jorgemarinho/go-expert-clean-architecture/internal/entity"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/stretchr/testify/suite"
 )

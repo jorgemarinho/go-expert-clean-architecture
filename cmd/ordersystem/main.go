@@ -12,15 +12,17 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 
 	"github.com/jorgemarinho/go-expert-clean-architecture/configs"
-	"github.com/jorgemarinho/go-expert-clean-architecture/event/handler"
-	"github.com/jorgemarinho/go-expert-clean-architecture/infra/graph"
-	"github.com/jorgemarinho/go-expert-clean-architecture/infra/grpc/pb"
-	"github.com/jorgemarinho/go-expert-clean-architecture/infra/grpc/service"
-	"github.com/jorgemarinho/go-expert-clean-architecture/infra/web/webserver"
+	"github.com/jorgemarinho/go-expert-clean-architecture/internal/event/handler"
+	"github.com/jorgemarinho/go-expert-clean-architecture/internal/infra/graph"
+	"github.com/jorgemarinho/go-expert-clean-architecture/internal/infra/grpc/pb"
+	"github.com/jorgemarinho/go-expert-clean-architecture/internal/infra/grpc/service"
+	"github.com/jorgemarinho/go-expert-clean-architecture/internal/infra/web/webserver"
 	"github.com/jorgemarinho/go-expert-clean-architecture/pkg/events"
 	"github.com/streadway/amqp"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
+
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func main() {

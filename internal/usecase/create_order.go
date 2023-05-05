@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"github.com/jorgemarinho/go-expert-clean-architecture/entity"
+	"github.com/jorgemarinho/go-expert-clean-architecture/internal/entity"
 	"github.com/jorgemarinho/go-expert-clean-architecture/pkg/events"
 )
 

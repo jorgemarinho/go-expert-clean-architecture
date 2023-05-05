@@ -3,7 +3,7 @@ package database
 import (
 	"database/sql"
 
-	"github.com/jorgemarinho/go-expert-clean-architecture/entity"
+	"github.com/jorgemarinho/go-expert-clean-architecture/internal/entity"
 )
 
 type OrderRepository struct {
